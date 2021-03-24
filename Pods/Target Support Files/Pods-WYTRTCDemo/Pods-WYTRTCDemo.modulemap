@@ -1,0 +1,6 @@
+module Pods_WYTRTCDemo {
+  umbrella header "Pods-WYTRTCDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

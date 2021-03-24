@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C32C2AF726018D0A0022179B /* LivePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C2AF626018D0A0022179B /* LivePlayViewController.m */; };
+		C32C2B012601F6520022179B /* CustomCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C2B002601F6520022179B /* CustomCaptureViewController.m */; };
+		C32C2B062601F6680022179B /* CustomEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C2B052601F6680022179B /* CustomEntranceViewController.m */; };
+		C32C2B102601F6960022179B /* TCMediaFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C2B092601F6960022179B /* TCMediaFileReader.m */; };
+		C32C2B112601F6960022179B /* TestRenderVideoFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C2B0A2601F6960022179B /* TestRenderVideoFrame.m */; };
+		C32C2B122601F6960022179B /* TestSendCustomVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C2B0D2601F6960022179B /* TestSendCustomVideoData.m */; };
+		C32C2B132601F6960022179B /* CustomCapture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32C2B0F2601F6960022179B /* CustomCapture.storyboard */; };
+		C3B4EAE42600407D003B91CF /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B4EAE32600407D003B91CF /* LiveViewController.m */; };
+		C3B4EAEB260040E7003B91CF /* LiveRoomManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4EAE8260040E7003B91CF /* LiveRoomManager.swift */; };
+		C3B4EAEC260040E7003B91CF /* LiveSubVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4EAE9260040E7003B91CF /* LiveSubVideoView.swift */; };
+		C3B4EAED260040E7003B91CF /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B4EAEA260040E7003B91CF /* Live.storyboard */; };
+		C3B4EB0F26005DA2003B91CF /* LivePushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B4EB0E26005DA2003B91CF /* LivePushViewController.m */; };
+		C3CE044725FEEA4D005569B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CE044625FEEA4D005569B7 /* AppDelegate.m */; };
+		C3CE044A25FEEA4D005569B7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CE044925FEEA4D005569B7 /* SceneDelegate.m */; };
+		C3CE044D25FEEA4D005569B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CE044C25FEEA4D005569B7 /* ViewController.m */; };
+		C3CE045025FEEA4D005569B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CE044E25FEEA4D005569B7 /* Main.storyboard */; };
+		C3CE045225FEEA4F005569B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CE045125FEEA4F005569B7 /* Assets.xcassets */; };
+		C3CE045525FEEA4F005569B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CE045325FEEA4F005569B7 /* LaunchScreen.storyboard */; };
+		C3CE045825FEEA4F005569B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CE045725FEEA4F005569B7 /* main.m */; };
+		C3CE046825FEF751005569B7 /* RTC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CE046725FEF751005569B7 /* RTC.storyboard */; };
+		C3CE046C25FEFA87005569B7 /* RTCEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CE046B25FEFA87005569B7 /* RTCEntranceViewController.m */; };
+		C3CE047025FEFAA4005569B7 /* RTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CE046F25FEFAA4005569B7 /* RTCViewController.m */; };
+		C3CE047E25FF0C1E005569B7 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CE047D25FF0C1E005569B7 /* libresolv.tbd */; };
+		C3CE048125FF0C32005569B7 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CE048025FF0C32005569B7 /* libiconv.tbd */; };
+		C3CE048425FF0C3E005569B7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CE048325FF0C3E005569B7 /* libc++.tbd */; };
+		C3CE048725FF0C47005569B7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CE048625FF0C47005569B7 /* Accelerate.framework */; };
+		C3CE049425FF1105005569B7 /* GenerateTestUserSig.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CE049225FF1105005569B7 /* GenerateTestUserSig.m */; };
+		C3D85680260AF6DB009A6C53 /* TXLiteAVSDK_TRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D8567F260AF6DB009A6C53 /* TXLiteAVSDK_TRTC.framework */; };
+		C3E280BF2602F51A00EA58F0 /* Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E280BE2602F51A00EA58F0 /* Screen.storyboard */; };
+		C3E280C52602F75F00EA58F0 /* ScreenEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E280C42602F75F00EA58F0 /* ScreenEntranceViewController.m */; };
+		C3E280CB2602F7F900EA58F0 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E280CA2602F7F900EA58F0 /* ScreenViewController.m */; };
+		C3E280CF26033EB000EA58F0 /* TRTCBroadcastExtensionLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E280CE26033EAF00EA58F0 /* TRTCBroadcastExtensionLauncher.swift */; };
+		C3E280E526034BC600EA58F0 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E280E426034BC600EA58F0 /* ReplayKit.framework */; };
+		C3E280E926034BC600EA58F0 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E280E826034BC600EA58F0 /* SampleHandler.m */; };
+		C3E280FD26034BC600EA58F0 /* TXReplayKit_Screen.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3E280E326034BC600EA58F0 /* TXReplayKit_Screen.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3E2811026034C6E00EA58F0 /* TXLiteAVSDK_ReplayKitExt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E280D92603495A00EA58F0 /* TXLiteAVSDK_ReplayKitExt.framework */; };
+		CC669AF59080DEF1B898E208 /* libPods-WYTRTCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019B5ABACA58C739B5EFB3CA /* libPods-WYTRTCDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3E280FB26034BC600EA58F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3CE043A25FEEA4D005569B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E280E226034BC600EA58F0;
+			remoteInfo = TXReplayKit_Screen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3E2810426034BC600EA58F0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3E280FD26034BC600EA58F0 /* TXReplayKit_Screen.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		019B5ABACA58C739B5EFB3CA /* libPods-WYTRTCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYTRTCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E191A14E96EAB3769D5E523 /* Pods-WYTRTCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYTRTCDemo.debug.xcconfig"; path = "Target Support Files/Pods-WYTRTCDemo/Pods-WYTRTCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3BCD592C6AF39C92317BA641 /* Pods-WYTRTCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYTRTCDemo.release.xcconfig"; path = "Target Support Files/Pods-WYTRTCDemo/Pods-WYTRTCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C329054C260441BF0024F907 /* TXReplayKit_Screen.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TXReplayKit_Screen.entitlements; sourceTree = "<group>"; };
+		C32C2AF526018D0A0022179B /* LivePlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivePlayViewController.h; sourceTree = "<group>"; };
+		C32C2AF626018D0A0022179B /* LivePlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LivePlayViewController.m; sourceTree = "<group>"; };
+		C32C2AFF2601F6520022179B /* CustomCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCaptureViewController.h; sourceTree = "<group>"; };
+		C32C2B002601F6520022179B /* CustomCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCaptureViewController.m; sourceTree = "<group>"; };
+		C32C2B042601F6680022179B /* CustomEntranceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEntranceViewController.h; sourceTree = "<group>"; };
+		C32C2B052601F6680022179B /* CustomEntranceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEntranceViewController.m; sourceTree = "<group>"; };
+		C32C2B092601F6960022179B /* TCMediaFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMediaFileReader.m; sourceTree = "<group>"; };
+		C32C2B0A2601F6960022179B /* TestRenderVideoFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRenderVideoFrame.m; sourceTree = "<group>"; };
+		C32C2B0B2601F6960022179B /* TestSendCustomVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSendCustomVideoData.h; sourceTree = "<group>"; };
+		C32C2B0C2601F6960022179B /* TCMediaFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMediaFileReader.h; sourceTree = "<group>"; };
+		C32C2B0D2601F6960022179B /* TestSendCustomVideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSendCustomVideoData.m; sourceTree = "<group>"; };
+		C32C2B0E2601F6960022179B /* TestRenderVideoFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRenderVideoFrame.h; sourceTree = "<group>"; };
+		C32C2B0F2601F6960022179B /* CustomCapture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomCapture.storyboard; sourceTree = "<group>"; };
+		C3B4EAE22600407D003B91CF /* LiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		C3B4EAE32600407D003B91CF /* LiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		C3B4EAE7260040E7003B91CF /* WYTRTCDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WYTRTCDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3B4EAE8260040E7003B91CF /* LiveRoomManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomManager.swift; sourceTree = "<group>"; };
+		C3B4EAE9260040E7003B91CF /* LiveSubVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSubVideoView.swift; sourceTree = "<group>"; };
+		C3B4EAEA260040E7003B91CF /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		C3B4EAFD26004683003B91CF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B4EB0D26005DA2003B91CF /* LivePushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivePushViewController.h; sourceTree = "<group>"; };
+		C3B4EB0E26005DA2003B91CF /* LivePushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LivePushViewController.m; sourceTree = "<group>"; };
+		C3CE044225FEEA4D005569B7 /* WYTRTCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYTRTCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CE044525FEEA4D005569B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3CE044625FEEA4D005569B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3CE044825FEEA4D005569B7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C3CE044925FEEA4D005569B7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C3CE044B25FEEA4D005569B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C3CE044C25FEEA4D005569B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3CE044F25FEEA4D005569B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3CE045125FEEA4F005569B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3CE045425FEEA4F005569B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3CE045625FEEA4F005569B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CE045725FEEA4F005569B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3CE046725FEF751005569B7 /* RTC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RTC.storyboard; sourceTree = "<group>"; };
+		C3CE046A25FEFA87005569B7 /* RTCEntranceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCEntranceViewController.h; sourceTree = "<group>"; };
+		C3CE046B25FEFA87005569B7 /* RTCEntranceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCEntranceViewController.m; sourceTree = "<group>"; };
+		C3CE046E25FEFAA4005569B7 /* RTCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCViewController.h; sourceTree = "<group>"; };
+		C3CE046F25FEFAA4005569B7 /* RTCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCViewController.m; sourceTree = "<group>"; };
+		C3CE047D25FF0C1E005569B7 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		C3CE048025FF0C32005569B7 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		C3CE048325FF0C3E005569B7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C3CE048625FF0C47005569B7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C3CE048825FF0C6E005569B7 /* TXLiteAVSDK_TRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TXLiteAVSDK_TRTC.framework; path = SDK/TXLiteAVSDK_TRTC.framework; sourceTree = "<group>"; };
+		C3CE049225FF1105005569B7 /* GenerateTestUserSig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateTestUserSig.m; sourceTree = "<group>"; };
+		C3CE049325FF1105005569B7 /* GenerateTestUserSig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateTestUserSig.h; sourceTree = "<group>"; };
+		C3D8567F260AF6DB009A6C53 /* TXLiteAVSDK_TRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TXLiteAVSDK_TRTC.framework; path = Pods/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC.framework; sourceTree = "<group>"; };
+		C3E280BE2602F51A00EA58F0 /* Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Screen.storyboard; sourceTree = "<group>"; };
+		C3E280C32602F75F00EA58F0 /* ScreenEntranceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenEntranceViewController.h; sourceTree = "<group>"; };
+		C3E280C42602F75F00EA58F0 /* ScreenEntranceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenEntranceViewController.m; sourceTree = "<group>"; };
+		C3E280C92602F7F900EA58F0 /* ScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
+		C3E280CA2602F7F900EA58F0 /* ScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
+		C3E280CE26033EAF00EA58F0 /* TRTCBroadcastExtensionLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRTCBroadcastExtensionLauncher.swift; sourceTree = "<group>"; };
+		C3E280D92603495A00EA58F0 /* TXLiteAVSDK_ReplayKitExt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TXLiteAVSDK_ReplayKitExt.framework; path = SDK/TXLiteAVSDK_ReplayKitExt.framework; sourceTree = "<group>"; };
+		C3E280E326034BC600EA58F0 /* TXReplayKit_Screen.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TXReplayKit_Screen.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E280E426034BC600EA58F0 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		C3E280E726034BC600EA58F0 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		C3E280E826034BC600EA58F0 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		C3E280EA26034BC600EA58F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E280F126034BC600EA58F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3CE043F25FEEA4D005569B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D85680260AF6DB009A6C53 /* TXLiteAVSDK_TRTC.framework in Frameworks */,
+				C3CE048725FF0C47005569B7 /* Accelerate.framework in Frameworks */,
+				C3CE048425FF0C3E005569B7 /* libc++.tbd in Frameworks */,
+				C3CE048125FF0C32005569B7 /* libiconv.tbd in Frameworks */,
+				C3CE047E25FF0C1E005569B7 /* libresolv.tbd in Frameworks */,
+				CC669AF59080DEF1B898E208 /* libPods-WYTRTCDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E280E026034BC600EA58F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E2811026034C6E00EA58F0 /* TXLiteAVSDK_ReplayKitExt.framework in Frameworks */,
+				C3E280E526034BC600EA58F0 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B913CED660E581C75DCF376 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E191A14E96EAB3769D5E523 /* Pods-WYTRTCDemo.debug.xcconfig */,
+				3BCD592C6AF39C92317BA641 /* Pods-WYTRTCDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C32C2AFE2601F6100022179B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C32C2B0F2601F6960022179B /* CustomCapture.storyboard */,
+				C32C2B082601F6960022179B /* testCustomVideo */,
+				C32C2B1A2601F8BD0022179B /* entrance */,
+				C32C2B1B2601F8CF0022179B /* capture */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C32C2B082601F6960022179B /* testCustomVideo */ = {
+			isa = PBXGroup;
+			children = (
+				C32C2B0C2601F6960022179B /* TCMediaFileReader.h */,
+				C32C2B092601F6960022179B /* TCMediaFileReader.m */,
+				C32C2B0E2601F6960022179B /* TestRenderVideoFrame.h */,
+				C32C2B0A2601F6960022179B /* TestRenderVideoFrame.m */,
+				C32C2B0B2601F6960022179B /* TestSendCustomVideoData.h */,
+				C32C2B0D2601F6960022179B /* TestSendCustomVideoData.m */,
+			);
+			path = testCustomVideo;
+			sourceTree = "<group>";
+		};
+		C32C2B1A2601F8BD0022179B /* entrance */ = {
+			isa = PBXGroup;
+			children = (
+				C32C2B042601F6680022179B /* CustomEntranceViewController.h */,
+				C32C2B052601F6680022179B /* CustomEntranceViewController.m */,
+			);
+			name = entrance;
+			sourceTree = "<group>";
+		};
+		C32C2B1B2601F8CF0022179B /* capture */ = {
+			isa = PBXGroup;
+			children = (
+				C32C2AFF2601F6520022179B /* CustomCaptureViewController.h */,
+				C32C2B002601F6520022179B /* CustomCaptureViewController.m */,
+			);
+			name = capture;
+			sourceTree = "<group>";
+		};
+		C3B4EADD26003FE1003B91CF /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4EAEA260040E7003B91CF /* Live.storyboard */,
+				C3B4EAE8260040E7003B91CF /* LiveRoomManager.swift */,
+				C3B4EAE9260040E7003B91CF /* LiveSubVideoView.swift */,
+				C3B4EAE22600407D003B91CF /* LiveViewController.h */,
+				C3B4EAE32600407D003B91CF /* LiveViewController.m */,
+				C3B4EADE26003FF9003B91CF /* push */,
+				C3B4EAE126004058003B91CF /* play */,
+				C3B4EAE7260040E7003B91CF /* WYTRTCDemo-Bridging-Header.h */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		C3B4EADE26003FF9003B91CF /* push */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4EB0D26005DA2003B91CF /* LivePushViewController.h */,
+				C3B4EB0E26005DA2003B91CF /* LivePushViewController.m */,
+			);
+			name = push;
+			sourceTree = "<group>";
+		};
+		C3B4EAE126004058003B91CF /* play */ = {
+			isa = PBXGroup;
+			children = (
+				C32C2AF526018D0A0022179B /* LivePlayViewController.h */,
+				C32C2AF626018D0A0022179B /* LivePlayViewController.m */,
+			);
+			name = play;
+			sourceTree = "<group>";
+		};
+		C3CE043925FEEA4D005569B7 = {
+			isa = PBXGroup;
+			children = (
+				C3CE049125FF1105005569B7 /* debug */,
+				C3CE046625FEF751005569B7 /* RTC */,
+				C3B4EADD26003FE1003B91CF /* Live */,
+				C32C2AFE2601F6100022179B /* Custom */,
+				C3E280BD2602F4E400EA58F0 /* Screen */,
+				C3CE044425FEEA4D005569B7 /* WYTRTCDemo */,
+				C3E280E626034BC600EA58F0 /* TXReplayKit_Screen */,
+				C3CE044325FEEA4D005569B7 /* Products */,
+				C3CE047C25FF0C1E005569B7 /* Frameworks */,
+				1B913CED660E581C75DCF376 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C3CE044325FEEA4D005569B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3CE044225FEEA4D005569B7 /* WYTRTCDemo.app */,
+				C3E280E326034BC600EA58F0 /* TXReplayKit_Screen.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3CE044425FEEA4D005569B7 /* WYTRTCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C3CE044525FEEA4D005569B7 /* AppDelegate.h */,
+				C3CE044625FEEA4D005569B7 /* AppDelegate.m */,
+				C3CE044825FEEA4D005569B7 /* SceneDelegate.h */,
+				C3CE044925FEEA4D005569B7 /* SceneDelegate.m */,
+				C3CE044B25FEEA4D005569B7 /* ViewController.h */,
+				C3CE044C25FEEA4D005569B7 /* ViewController.m */,
+				C3CE044E25FEEA4D005569B7 /* Main.storyboard */,
+				C3CE045125FEEA4F005569B7 /* Assets.xcassets */,
+				C3CE045325FEEA4F005569B7 /* LaunchScreen.storyboard */,
+				C3CE045625FEEA4F005569B7 /* Info.plist */,
+				C3CE045725FEEA4F005569B7 /* main.m */,
+			);
+			path = WYTRTCDemo;
+			sourceTree = "<group>";
+		};
+		C3CE046625FEF751005569B7 /* RTC */ = {
+			isa = PBXGroup;
+			children = (
+				C3CE046725FEF751005569B7 /* RTC.storyboard */,
+				C3CE047625FEFB51005569B7 /* entrance */,
+				C3CE047525FEFB34005569B7 /* rtc */,
+			);
+			path = RTC;
+			sourceTree = "<group>";
+		};
+		C3CE047525FEFB34005569B7 /* rtc */ = {
+			isa = PBXGroup;
+			children = (
+				C3CE046E25FEFAA4005569B7 /* RTCViewController.h */,
+				C3CE046F25FEFAA4005569B7 /* RTCViewController.m */,
+			);
+			name = rtc;
+			sourceTree = "<group>";
+		};
+		C3CE047625FEFB51005569B7 /* entrance */ = {
+			isa = PBXGroup;
+			children = (
+				C3CE046A25FEFA87005569B7 /* RTCEntranceViewController.h */,
+				C3CE046B25FEFA87005569B7 /* RTCEntranceViewController.m */,
+			);
+			name = entrance;
+			sourceTree = "<group>";
+		};
+		C3CE047C25FF0C1E005569B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8567F260AF6DB009A6C53 /* TXLiteAVSDK_TRTC.framework */,
+				C3E280D92603495A00EA58F0 /* TXLiteAVSDK_ReplayKitExt.framework */,
+				C3B4EAFD26004683003B91CF /* Alamofire.framework */,
+				C3CE048825FF0C6E005569B7 /* TXLiteAVSDK_TRTC.framework */,
+				C3CE048625FF0C47005569B7 /* Accelerate.framework */,
+				C3CE048325FF0C3E005569B7 /* libc++.tbd */,
+				C3CE048025FF0C32005569B7 /* libiconv.tbd */,
+				C3CE047D25FF0C1E005569B7 /* libresolv.tbd */,
+				C3E280E426034BC600EA58F0 /* ReplayKit.framework */,
+				C3E280F126034BC600EA58F0 /* UIKit.framework */,
+				019B5ABACA58C739B5EFB3CA /* libPods-WYTRTCDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3CE049125FF1105005569B7 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				C3CE049325FF1105005569B7 /* GenerateTestUserSig.h */,
+				C3CE049225FF1105005569B7 /* GenerateTestUserSig.m */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		C3E280BD2602F4E400EA58F0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C3E280BE2602F51A00EA58F0 /* Screen.storyboard */,
+				C3E280CE26033EAF00EA58F0 /* TRTCBroadcastExtensionLauncher.swift */,
+				C3E280C22602F74000EA58F0 /* entrance */,
+				C3E280C82602F7E800EA58F0 /* screen */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		C3E280C22602F74000EA58F0 /* entrance */ = {
+			isa = PBXGroup;
+			children = (
+				C3E280C32602F75F00EA58F0 /* ScreenEntranceViewController.h */,
+				C3E280C42602F75F00EA58F0 /* ScreenEntranceViewController.m */,
+			);
+			name = entrance;
+			sourceTree = "<group>";
+		};
+		C3E280C82602F7E800EA58F0 /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				C3E280C92602F7F900EA58F0 /* ScreenViewController.h */,
+				C3E280CA2602F7F900EA58F0 /* ScreenViewController.m */,
+			);
+			name = screen;
+			sourceTree = "<group>";
+		};
+		C3E280E626034BC600EA58F0 /* TXReplayKit_Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C329054C260441BF0024F907 /* TXReplayKit_Screen.entitlements */,
+				C3E280E726034BC600EA58F0 /* SampleHandler.h */,
+				C3E280E826034BC600EA58F0 /* SampleHandler.m */,
+				C3E280EA26034BC600EA58F0 /* Info.plist */,
+			);
+			path = TXReplayKit_Screen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3CE044125FEEA4D005569B7 /* WYTRTCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3CE045B25FEEA4F005569B7 /* Build configuration list for PBXNativeTarget "WYTRTCDemo" */;
+			buildPhases = (
+				E5AE39A8CCD581C5F9596F8F /* [CP] Check Pods Manifest.lock */,
+				C3CE043E25FEEA4D005569B7 /* Sources */,
+				C3CE043F25FEEA4D005569B7 /* Frameworks */,
+				C3CE044025FEEA4D005569B7 /* Resources */,
+				C3E2810426034BC600EA58F0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E280FC26034BC600EA58F0 /* PBXTargetDependency */,
+			);
+			name = WYTRTCDemo;
+			productName = WYTRTCDemo;
+			productReference = C3CE044225FEEA4D005569B7 /* WYTRTCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3E280E226034BC600EA58F0 /* TXReplayKit_Screen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E2810126034BC600EA58F0 /* Build configuration list for PBXNativeTarget "TXReplayKit_Screen" */;
+			buildPhases = (
+				C3E280DF26034BC600EA58F0 /* Sources */,
+				C3E280E026034BC600EA58F0 /* Frameworks */,
+				C3E280E126034BC600EA58F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TXReplayKit_Screen;
+			productName = TXReplayKit_Screen;
+			productReference = C3E280E326034BC600EA58F0 /* TXReplayKit_Screen.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3CE043A25FEEA4D005569B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C3CE044125FEEA4D005569B7 = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					C3E280E226034BC600EA58F0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = C3CE043D25FEEA4D005569B7 /* Build configuration list for PBXProject "WYTRTCDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3CE043925FEEA4D005569B7;
+			productRefGroup = C3CE044325FEEA4D005569B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3CE044125FEEA4D005569B7 /* WYTRTCDemo */,
+				C3E280E226034BC600EA58F0 /* TXReplayKit_Screen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3CE044025FEEA4D005569B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32C2B132601F6960022179B /* CustomCapture.storyboard in Resources */,
+				C3CE045525FEEA4F005569B7 /* LaunchScreen.storyboard in Resources */,
+				C3CE045225FEEA4F005569B7 /* Assets.xcassets in Resources */,
+				C3E280BF2602F51A00EA58F0 /* Screen.storyboard in Resources */,
+				C3CE046825FEF751005569B7 /* RTC.storyboard in Resources */,
+				C3B4EAED260040E7003B91CF /* Live.storyboard in Resources */,
+				C3CE045025FEEA4D005569B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E280E126034BC600EA58F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E5AE39A8CCD581C5F9596F8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WYTRTCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3CE043E25FEEA4D005569B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E280CB2602F7F900EA58F0 /* ScreenViewController.m in Sources */,
+				C32C2AF726018D0A0022179B /* LivePlayViewController.m in Sources */,
+				C32C2B062601F6680022179B /* CustomEntranceViewController.m in Sources */,
+				C3CE044D25FEEA4D005569B7 /* ViewController.m in Sources */,
+				C32C2B112601F6960022179B /* TestRenderVideoFrame.m in Sources */,
+				C3CE044725FEEA4D005569B7 /* AppDelegate.m in Sources */,
+				C32C2B102601F6960022179B /* TCMediaFileReader.m in Sources */,
+				C3CE047025FEFAA4005569B7 /* RTCViewController.m in Sources */,
+				C3B4EAEB260040E7003B91CF /* LiveRoomManager.swift in Sources */,
+				C32C2B012601F6520022179B /* CustomCaptureViewController.m in Sources */,
+				C3B4EB0F26005DA2003B91CF /* LivePushViewController.m in Sources */,
+				C3E280C52602F75F00EA58F0 /* ScreenEntranceViewController.m in Sources */,
+				C3CE049425FF1105005569B7 /* GenerateTestUserSig.m in Sources */,
+				C32C2B122601F6960022179B /* TestSendCustomVideoData.m in Sources */,
+				C3CE045825FEEA4F005569B7 /* main.m in Sources */,
+				C3CE044A25FEEA4D005569B7 /* SceneDelegate.m in Sources */,
+				C3B4EAE42600407D003B91CF /* LiveViewController.m in Sources */,
+				C3CE046C25FEFA87005569B7 /* RTCEntranceViewController.m in Sources */,
+				C3E280CF26033EB000EA58F0 /* TRTCBroadcastExtensionLauncher.swift in Sources */,
+				C3B4EAEC260040E7003B91CF /* LiveSubVideoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E280DF26034BC600EA58F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E280E926034BC600EA58F0 /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3E280FC26034BC600EA58F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E280E226034BC600EA58F0 /* TXReplayKit_Screen */;
+			targetProxy = C3E280FB26034BC600EA58F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3CE044E25FEEA4D005569B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3CE044F25FEEA4D005569B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3CE045325FEEA4F005569B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3CE045425FEEA4F005569B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3CE045925FEEA4F005569B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3CE045A25FEEA4F005569B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3CE045C25FEEA4F005569B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E191A14E96EAB3769D5E523 /* Pods-WYTRTCDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5UZFY4DGL;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Pods/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC",
+					"$(SRC_ROOT)/SDK",
+				);
+				INFOPLIST_FILE = WYTRTCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap\"",
+					"-Wno-incomplete-umbrella",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeany.WYTRTCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Live/WYTRTCDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3CE045D25FEEA4F005569B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BCD592C6AF39C92317BA641 /* Pods-WYTRTCDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5UZFY4DGL;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Pods/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC",
+					"$(SRC_ROOT)/SDK",
+				);
+				INFOPLIST_FILE = WYTRTCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.modulemap\"",
+					"-Wno-incomplete-umbrella",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeany.WYTRTCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Live/WYTRTCDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3E2810226034BC600EA58F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5UZFY4DGL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK",
+				);
+				INFOPLIST_FILE = TXReplayKit_Screen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeany.WYTRTCDemo.TXReplayKit-Screen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3E2810326034BC600EA58F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5UZFY4DGL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK",
+				);
+				INFOPLIST_FILE = TXReplayKit_Screen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeany.WYTRTCDemo.TXReplayKit-Screen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3CE043D25FEEA4D005569B7 /* Build configuration list for PBXProject "WYTRTCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CE045925FEEA4F005569B7 /* Debug */,
+				C3CE045A25FEEA4F005569B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CE045B25FEEA4F005569B7 /* Build configuration list for PBXNativeTarget "WYTRTCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CE045C25FEEA4F005569B7 /* Debug */,
+				C3CE045D25FEEA4F005569B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E2810126034BC600EA58F0 /* Build configuration list for PBXNativeTarget "TXReplayKit_Screen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E2810226034BC600EA58F0 /* Debug */,
+				C3E2810326034BC600EA58F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3CE043A25FEEA4D005569B7 /* Project object */;
+}
